@@ -1,3 +1,62 @@
-.h1 {
+h1 { 
+    text-align: center;
+    outline-color: rgb(0, 209, 80);
     
+}
+
+
+.Flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    min-height: 40vh;
+}
+
+.countdown-box #countdown {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.audio-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media (min-width: 700px) {
+    .hero {
+        flex-direction: row;
+    }
+    .countdown-wrap #countdown {
+        font-size: 2.5rem;
+    }
+}
+
+
+.Flexbox-bilder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+.Flexbox-bilder .bild-item img {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    display: block;
+}
+
+@media (min-width: 700px) {
+    .Flexbox-bilder .bild-item img {
+        max-width: 260px;
+    }
 }

@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="style.css">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jul Sida</title>
+  </head>
+  <body>
     <h1>God Jul!</h1>
-    <p id="countdown"></p>
+    <div class="Flexbox">
+      <div class="countdown-box">
+        <p id="countdown"></p>
+      </div>
+
+      <div class="audio-box">
+        <label for="juleljud">Spela upp julmusik:</label>
+        <audio id="juleljud" controls>
+          <source
+            src="christmas-jazz-christmas-holiday-347485.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+      </div>
+    </div>
+
+    <div class="Flexbox-bilder" aria-label="Galleri bilder">
+      <div class="bild-item"><img src="JulCollage.png" alt="Bild 1" /></div>
+      <div class="bild-item"><img src="bild2.jpg" alt="Bild 2" /></div>
+      <div class="bild-item"><img src="bild3.jpg" alt="Bild 3" /></div>
+    </div>
+
     <script src="javascript_nedräkning.js"></script>
-    
-</body>
+  </body>
 </html>
